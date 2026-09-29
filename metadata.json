@@ -1,0 +1,6 @@
+{
+  "name": "Inkooginito - Neobrutalist Collaborative Whiteboard",
+  "description": "Real-time collaborative whiteboard platform with pen pressure sensitivity, author stroke tracking, social deduction game mode, and multi-format exports in high-energy neobrutalism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

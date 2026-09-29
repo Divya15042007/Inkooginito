@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FFFDF5;
+    color: #121212;
+    touch-action: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Neobrutalist custom shadows */
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.brutal-shadow-xl {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.brutal-btn {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  transition: all 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.brutal-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.brutal-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.brutal-card {
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  background-color: #ffffff;
+}
+
+/* Canvas backgrounds */
+.canvas-grid-dots {
+  background-image: radial-gradient(#d4d4d8 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.canvas-grid-lines {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.canvas-grid-graph {
+  background-image: 
+    linear-gradient(to right, rgba(0, 100, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 100, 255, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom crisp scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+  border-left: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFE600;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5470;
+}
